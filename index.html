@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descripción del sitio">
+    <link rel="icon" type="image/png" sizes="32x32" href="build/img/favicon-template.png">
+    <title>News Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__navbar container">
+            <div class="header__brand">
+                <img class="header__image" src="build/img/logo.svg" alt="brand news" width="65" height="40">
+                <h1 class="header__agency">Agency Name</h1>
+            </div>
+
+            <div class="header__menu-icon header__menu-icon--open"></div>
+
+            <nav class="header__navigation">
+                <a class="header__link" href="#">Home</a>
+                <a class="header__link" href="#">New</a>
+                <a class="header__link" href="#">Popular</a>
+                <a class="header__link" href="#">Trending</a>
+                <a class="header__link" href="#">Categories</a>
+            </nav>
+
+            <!-- <span class="header__menu-bg"></span> -->
+        </div>
+    </header>
+
+    <main class="cover-editorials container">
+        <section class="cover-editorials__cover">
+            <article class="main-news">
+                <picture>
+                    <source
+                        sizes="1920w, 768w" 
+                        srcset="build/img/image-web-3-desktop.avif 1920w, 
+                                build/img/image-web-3-mobile.avif 768w" 
+                        type="image/avif">
+                    <source
+                        sizes="1920w, 768w" 
+                        srcset="build/img/image-web-3-desktop.webp 1920w, 
+                                build/img/image-web-3-mobile.webp 768w" 
+                        type="image/webp">
+                    <source
+                        sizes="1920w, 768w" 
+                        srcset="build/img/image-web-3-desktop.jpg 1920w, 
+                                build/img/image-web-3-mobile.jpg 768w" 
+                        type="image/jpeg">
+
+                    
+                    <img class="main-news__thumb" loading="lazy" decoding="async" src="build/img/image-web-3-mobile.jpg" alt="The Bright Future of Web 3.0" width="1460" height="600">
+                </picture>
+
+                <div class="main-news__content">
+                    <h3 class="main-news__title">The Bright Future of Web 3.0?</h3>
+
+                    <div class="main-news__description">
+                        <p class="main-news__text">
+                            We dive into the next evolution of the web that claims to put the power of the platforms
+                            back into the hands of the people.
+                            But is it really fulfilling its promise?
+                        </p>
+
+                        <a class="main-news__btn" href="#">Read More</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="cover-editorials__editorials">
+            <h3 class="cover-editorials__heading">New</h3>
+
+            <article class="editorial">
+                <h3 class="editorial__title">Hydrogen VS Electric Cars</h3>
+                <p class="editorial__text">Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </article>
+
+            <article class="editorial">
+                <h3 class="editorial__title">The Downsides of AI Artistry</h3>
+                <p class="editorial__text">What are the possible adverse effects of on-demand AI image generation?</p>
+            </article>
+
+            <article class="editorial">
+                <h3 class="editorial__title">Is VC Funding Drying Up?</h3>
+                <p class="editorial__text">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+            </article>
+        </section>
+    </main>
+
+    <section class="trendings container">
+        <article class="trending">
+            <div class="trending__thumb">
+                <img class="trending__image" src="build/img/image-retro-pcs.jpg" alt="Reviving Retro PCs" width="200" height="254">
+            </div>
+
+            <div class="trending__content">
+                <p class="trending__position">01</p>
+
+                <h3 class="trending__title">Reviving Retro PCs</h3>
+
+                <p class="trending__text">What happens when old PCs are given modern upgrades?</p>
+            </div>
+        </article>
+
+        <article class="trending">
+            <div class="trending__thumb">
+                <img class="trending__image" src="build/img/image-top-laptops.jpg" alt="Top 10 Laptops of 2022" width="200" height="254">
+            </div>
+
+            <div class="trending__content">
+                <p class="trending__position">02</p>
+
+                <h3 class="trending__title">Top 10 Laptops of 2022</h3>
+
+                <p class="trending__text">Our best picks for various needs and budgets.</p>
+            </div>
+        </article>
+
+        <article class="trending">
+            <div class="trending__thumb">
+                <img class="trending__image" src="build/img/image-gaming-growth.jpg" alt="The Growth of Gaming" width="200" height="254">
+            </div>
+
+            <div class="trending__content">
+                <p class="trending__position">03</p>
+
+                <h3 class="trending__title">The Growth of Gaming</h3>
+
+                <p class="trending__text">How the pandemic has sparked fresh opportunities.</p>
+            </div>
+        </article>
+    </section>
+
+    <footer class="footer">
+        <p class="footer__text">Challenge by <a class="footer__link" href="https://www.frontendmentor.io/home" target="_blank">Frontend Mentor</a>.</p>
+        <p class="footer__text">Coded by <a class="footer__link" href="https://www.frontendmentor.io/profile/mescobar89" target="_blank">Martín Escobar</a>.</p>
+    </footer>
+
+    <script src="./build/js/images.js"></script>
+</body>
+
+</html>
